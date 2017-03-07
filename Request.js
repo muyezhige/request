@@ -1,3 +1,7 @@
+/* @auchor lihonglei
+ * @des 源码大小只有4k，可用于移动端的开发需求。
+ */
+
 var Request = {
     // 生成时间戳
     now : function(){
@@ -107,7 +111,9 @@ var Request = {
     }
 };
 
-// 执行请求
+// =======================================================
+
+// demo1：执行post异步请求
 Request.ajax({
     url: familyRankUrl,
     type: "post",
@@ -123,7 +129,7 @@ Request.ajax({
     }
 });
 
-// 跨域请求
+// demo2：执行jsonp跨域请求
 Request.jsonp(urlConfig.platformUrl, {callback: "jsonp_call_back"}, function(res){
     console.log(res);
 });
