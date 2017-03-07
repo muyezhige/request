@@ -1,5 +1,3 @@
-// http://www.travisup.com/post/index/28
-
 var Request = {
     // 生成时间戳
     now : function(){
